@@ -155,10 +155,10 @@ p{
     width: 100%;
     height: 600px;
     display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
- 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
 }
 
 
@@ -367,8 +367,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -428,6 +428,10 @@ p{
     font-weight: 500;
     line-height: 1.5; 
     letter-spacing: 0.32px;
+}
+.social-media-footer .our-team-link svg{
+    width: 24px;
+    height: 24px;
 }
 .social-media-footer .our-team-link-item:not(:last-child){
     margin-right: 16px;
