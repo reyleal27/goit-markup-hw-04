@@ -5,6 +5,9 @@
     --white:#fff;
     --cornflower: #E7E9FC;
     --LIGHT-SLATE: #8E8F99;
+    --green: #31D0AA;
+    --ocean: #404BBF;
+
 }
 
 body{
@@ -137,7 +140,7 @@ p{
 .container{
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
 }
 
 .section{
@@ -149,19 +152,16 @@ p{
 /*HERO SECTION*/
 
 .hero-section { 
-    background-image: linear-gradient(rgba(46,46,46,0.7),rgba(46,47,46,0.7)),url(/images/bg-image.jpg);
-    background-size: contain;
+    background-image: linear-gradient(rgba(46,46,46,0.7),rgba(46,47,46,0.7)),url(/images/background.jpg);
+    background-size: cover;
     max-width: 1440px;
     color: var(--white); 
-    width: 100%;
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
-
-
+.hero-section .container {
+    text-align: center;
+    padding-top: 188px;
+}
 .hero-title{
     font-size: 56px;
     font-weight: 700;
@@ -170,7 +170,7 @@ p{
     height: 120px;
     width: 496px;
     text-align: center;
-
+    margin: auto;
 }
 
 .button{
@@ -182,16 +182,17 @@ p{
     font-size: 16px;
     font-weight: 500;
     margin-top: 50px;
+    
 }
 
 .button:hover{
     cursor: pointer;
-    color: var(--secondary-color);
-    background-color: var(--white);
+    background-color: var(--ocean);
 }
 .button:focus{
     color: var(--secondary-color);
     background-color: var(--cloud);
+    
 }
 
 
@@ -422,12 +423,17 @@ p{
     margin-left:156px;
     margin-right: 120px;
 }
+
 .social-media-footer h5{
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; 
     letter-spacing: 0.32px;
+}
+.our-team-link-item:hover{
+    color: var(--cloud);
+    background-color: #31D0AA;
 }
 .social-media-footer .our-team-link svg{
     width: 24px;
