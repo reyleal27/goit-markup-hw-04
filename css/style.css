@@ -151,15 +151,17 @@ p{
 /*HERO SECTION*/
 
 .hero-section { 
-    background-image: linear-gradient(rgba(46,46,46,0.7),rgba(46,47,46,0.7)),url(/images/background.jpg);
+    background-image: linear-gradient(rgba(46,46,46,0.7),rgba(46,47,46,0.7)),url(/images/hero-bg.jpg);
     background-size: cover;
     max-width: 1440px;
     color: var(--white); 
     padding: 180px 0;
 }
+
 .hero-section .container {
     text-align: center;
 }
+
 .hero-title{
     font-size: 56px;
     font-weight: 700;
@@ -405,12 +407,6 @@ p{
    
 }
 
-
-.company-icon:hover{
-    fill: var(--ocean);
-    border-color: var(--ocean);
-}
-
 .company-icon{
     width: 104px;
     height: 56px;
@@ -420,7 +416,10 @@ p{
     border-radius: 4px;
 }
 
-
+.company-icon:hover {
+    fill: var(--ocean);
+    border-color: var(--ocean);
+}
 
 /*FOOTER*/
 .footer-section{
