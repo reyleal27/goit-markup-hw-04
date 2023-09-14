@@ -7,7 +7,6 @@
     --LIGHT-SLATE: #8E8F99;
     --green: #31D0AA;
     --ocean: #404BBF;
-
 }
 
 body{
@@ -156,11 +155,10 @@ p{
     background-size: cover;
     max-width: 1440px;
     color: var(--white); 
-    height: 600px;
+    padding: 180px 0;
 }
 .hero-section .container {
     text-align: center;
-    padding-top: 188px;
 }
 .hero-title{
     font-size: 56px;
@@ -218,7 +216,7 @@ p{
    top: 10px;
    left: 10px;
 }
-.feature-section{
+.feature{
     background-color: var(--white);
 }
 .feature-list{
@@ -372,6 +370,11 @@ p{
     height: 16px;
 }
 
+.our-team-link-item:hover {
+    color: var(--cloud);
+    background-color: #31D0AA;
+    cursor: pointer;
+}
 
 /* CLIENT SECTION */
 .client-section{
@@ -399,16 +402,25 @@ p{
     align-items: center;
     justify-content: center;
     list-style: none;
-    width: 168px;
-    height: 88px;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE);
+   
+}
+
+
+.company-icon:hover{
+    fill: var(--ocean);
+    border-color: var(--ocean);
 }
 
 .company-icon{
     width: 104px;
     height: 56px;
+    padding: 16px 32px;
+    fill: var(--LIGHT-SLATE);
+    border: 1px solid var(--LIGHT-SLATE);
+    border-radius: 4px;
 }
+
+
 
 /*FOOTER*/
 .footer-section{
@@ -431,10 +443,8 @@ p{
     line-height: 1.5; 
     letter-spacing: 0.32px;
 }
-.our-team-link-item:hover{
-    color: var(--cloud);
-    background-color: #31D0AA;
-}
+
+
 .social-media-footer .our-team-link svg{
     width: 24px;
     height: 24px;
