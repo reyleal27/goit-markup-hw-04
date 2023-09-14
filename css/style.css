@@ -417,6 +417,7 @@ p{
 }
 
 .company-icon:hover {
+    cursor: pointer;
     fill: var(--ocean);
     border-color: var(--ocean);
 }
