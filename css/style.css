@@ -287,14 +287,8 @@ p{
 
 
 /*TEAM CONTAINER*/
-.team-section{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.team{
     background-color: var(--cloud);
-    height: 732px;
-
 }
 
 .team-ul{
