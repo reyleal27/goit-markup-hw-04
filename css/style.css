@@ -153,6 +153,9 @@ p{
 .hero-section { 
     background-image: linear-gradient(rgba(46,46,46,0.7),rgba(46,47,46,0.7)),url(/images/hero.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
     max-width: 1440px;
     color: var(--white); 
     padding: 180px 0;
@@ -223,16 +226,13 @@ p{
 }
 .feature-list{
    display: flex;
-   gap:24px;
     padding: 0;
-   
+   flex-wrap: wrap;
+   gap: 24px;
 }
 
 .feature-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
+    flex-basis: calc((100% - 72px)/4);
     list-style: none;
 }
 
@@ -241,8 +241,11 @@ p{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    padding-top: 8px;
 }
+
 .feature-description{
+    padding-top: 8px;
     width: 264px;
     font-size: 16px;
     font-weight: 400;
@@ -268,9 +271,8 @@ p{
 
 .image-ul{
     display: flex;
-    flex-wrap: wrap;
     padding: 0;
-    gap:24px;
+    gap: 24px;
 }
 .images{
     list-style: none;
@@ -473,10 +475,6 @@ p{
 
 
 /*Portfolio Design*/
-.portfolio-body .section{
-    padding-top: 96px;
-}
-
 .filter-buttons{
     display: flex;
     justify-content: center;
@@ -517,12 +515,14 @@ p{
 }
 
 /*BODY IMAGES*/
+
 .project-card-lists{
-   display: flex;
+   display:flex;
    flex-wrap: wrap;
    margin-top: 72px;
    padding: 0;
    gap:24px;
+   flex-basis: calc((100% - 48px) / 3);
 }
 
 .images-title {
